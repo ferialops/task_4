@@ -9,8 +9,11 @@ public class Main {
 
         int n = enterN();
 
-        int result = findAmount(n);
-        System.out.print(result);
+        if (n != 0){
+
+            int result = findAmount(n);
+            System.out.print(result);
+        }
     }
 
     static int enterN() {
@@ -19,7 +22,7 @@ public class Main {
         int value = sc.nextInt();
         if (value <= 0) {
             System.out.print("Value can be only more then 0");
-            System.exit(1);
+            return 0;
         }
         return value;
     }
