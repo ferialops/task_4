@@ -9,8 +9,7 @@ public class Main {
 
         int n = enterN();
 
-        if (n != 0){
-
+        if (n != 0) {
             int result = findAmount(n);
             System.out.print(result);
         }
